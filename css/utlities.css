@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #0CB2BF;
+  --secondary-color: #1B273A;
+  --tertiary-color: #90899f;
+  --quaternary-color: #4f4364;
+  --text-color: #1f1f1f;
+  --text-color-alt: #fff;
+  --background-dark: linear-gradient(to right bottom, #1b273a, #1a263e, #1b2442, #1f2145, #241e47);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body, input, textarea, button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 10px 0;
+  color: var(--secondary-color);
+}
+
+p, li {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1600px;
+  width: 85%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-top: 1em;
+  font-weight: 500;
+  transition: 0.25s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 75%;
+  
+}
+
+/* Layout */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-r {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+/* Margin */
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* Padding */
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5;
+}
+
+#page {
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+@media (min-width: 43.75em) {
+  #page {
+	font-size: 1em;
+	line-height: 1.375;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+	font-size: 2.5em;
+	line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+	font-size: 3em;
+	line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+	font-size: 2em;
+	line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+	font-size: 2.25em;
+	line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+	font-size: 1.5em;
+	line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+	font-size: 1.75em;
+	line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+	line-height: 1.22222222;
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+
+@media (min-width: 43.75em) {
+	blockquote {
+		font-size: 1.5em;
+		line-height: 1.45833333;
+	}
+}
+
+
+/* Devices */
+
+@media(max-width: 768px) {
+	body{
+		text-align: center;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+  #optTitleCanvasHldr{
+    display: none;
+  }
+}
+
+@media(max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}

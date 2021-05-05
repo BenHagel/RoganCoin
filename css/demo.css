@@ -1,0 +1,379 @@
+/*html{
+	color: white;
+	overflow: hidden;
+	height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+	background-image: radial-gradient(circle, #3f4f5e, #374754, #303f4b, #283742, #212f39, #1e2c35, #1b2832, #18252e, #18252e, #17252d, #17242d, #17242c);
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+*/
+button {
+    border: 1px white solid;
+    color: white;
+    background-color: transparent;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black !important;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+}
+button:focus {
+    outline: none;
+    transform: scale(1.04);
+    color: black;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+}
+
+.legatus-warning{
+    color:red;
+}
+
+.legatus-demo-superscript{
+    color: orangered;
+    font-size: xx-large;
+}
+
+.imagenoselect{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#legatus_signInLabel{
+    color: white;
+    float: right;
+}
+
+#legatus_userIconImg{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.user-icon{
+    max-width: 90px;
+}
+
+.user-panel{
+    position: fixed;
+    top: 120px;
+    right: 40px;
+    background-color: none;
+    border: 1px white solid;
+    text-align: center;
+    border: solid white 1px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-panel:hover{
+    background-color: rgb(247, 201, 26);
+    border: 1px black solid;
+}
+.user-panel:hover > span{
+    color: black;
+}
+
+.user-panel:hover > #legatus_signInLabel{
+    color: black;
+}
+.user-panel:hover > #legatus_userIconImg{
+    -webkit-filter: invert(0);
+    filter: invert(0);
+}
+
+.user-panel-drop-down{
+    cursor:auto;
+    display: none;
+    position: fixed;
+    top: 187px;
+    right: 40px;
+    min-width: 290px;
+    text-align: center;
+    min-height: 120px;
+    border: 1px white solid;
+    border-radius: 5px;
+    background-image: radial-gradient(circle, #3f4f5e, #374754, #303f4b, #283742, #212f39, #1e2c35, #1b2832, #18252e, #18252e, #17252d, #17242d, #17242c);
+}
+
+#legatus_createNewAccountScreen{
+    display: flex;
+    align-items: center;
+}
+#legatus_createNewAccountButton{
+    width: 100%;
+    margin: 15px;
+}
+.user-panel:hover .user-panel-drop-down{
+    display: block;
+}
+.interfaceHeader{
+    width: 100%;
+    padding: 10px;
+}
+
+.intParent{
+    min-width: 720px;
+    max-width: 720px;
+    border-radius: 15px;
+    background-color: #1b273a;
+    display: inline-block;
+    text-align: left;
+    padding: 15px;
+}
+
+.openPanel{
+    max-height: 1800px;
+    display: block;
+    overflow: hidden;
+}
+
+.closePanel{
+    max-height: 0px;
+    display: none;
+    overflow: hidden;
+}
+
+.toggle {
+    --width: 50px;
+    --height: calc(var(--width) / 2);
+    --border-radius: calc(var(--height) / 2);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle__input {
+    display: none;
+}
+
+.toggle__fill {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background: #dddddd;
+    transition: background 0.25s;
+}
+
+.toggle__input:checked ~ .toggle__fill {
+    background: var(--primary-color);
+}
+
+.toggle__fill::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--height);
+    width: var(--height);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius);
+    transition: transform 0.2s;
+}
+
+.toggle__input:checked ~ .toggle__fill::after {
+    transform: translateX(var(--height));
+}
+
+.intParentLeft{
+    text-align: left;
+    width: 44%;
+    float: left;
+    padding-left: 10px;
+    display: inline-flex;
+}
+.intCharacterCount{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: orangered;
+}
+.intParentRight{
+    text-align: right;
+    width: 44%;
+    float: right;
+    padding-right: 10px;
+}
+
+.intRow{
+    text-align: left;
+}
+
+.stdIntLabel{
+    color:rgb(213, 213, 213);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.stdIntLabelForRightPanel{
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 10px 16px;
+    font-size: 16px;
+    /*background-color: #fff;*/
+    border: 1px solid #597183;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    color: black !important;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    transform: scale(1.04);
+    color: black;
+}
+
+input[type="number"] {
+    padding: 10px 16px;
+    font-size: 16px;
+    /*background-color: #fff;*/
+    border: 1px solid #597183;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    color: black !important;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    transform: scale(1.04);
+    color: black;
+}
+
+#opttDropdownEntryPointAndStatus{
+    height: 47px;
+}
+
+input, textarea {
+    font-size: 24px;
+    padding: 5px;
+    
+    color: rgb(0,0,0);
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    -webkit-text-fill-color: transparent;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: rgb(116, 116, 116);
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
+.stdIntInput{
+    width: 300px;
+}
+.stdIntInputSingleNum{
+    width: 100px;
+}
+.stdIntInputDisplay{
+    width: 80px;
+}
+
+#opttDemoNNIntCanvasHlder{
+    border-radius: 15px;
+}
+
+/* .doptt-selector{
+    
+} */
+.opttDimensionSpecification:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.opttDimensionSpecificationCol{
+    float: left;
+    width: 33.33%;
+    height: 122px;
+    width: 90px;
+}
+
+.opttDimensionSpecificationParagraph{
+    color: white;
+    font-size: 14px;
+}
+
+.hyper-param-number-field{
+    width: 70px;
+    text-align: left;
+}
+
+.optt-layer-number-input{
+    caret-color: transparent;
+    width: 80px;
+}
+
+.opttd-dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .opttd-dropbtn:hover, .opttd-dropbtn:focus {
+    background-color: #ffffff;
+  }
+  
+  .opttd-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .opttd-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 4px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .opttd-dropdown-content a {
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.opttd-dropdown a:hover {background-color: #ddd;}
+
+.opttd-show {display: block;}
+
