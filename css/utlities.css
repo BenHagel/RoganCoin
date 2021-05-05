@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
-  --primary-color: #0CB2BF;
-  --secondary-color: #1B273A;
-  --tertiary-color: #90899f;
-  --quaternary-color: #4f4364;
-  --text-color: #1f1f1f;
-  --text-color-alt: #fff;
-  --background-dark: linear-gradient(to right bottom, #1b273a, #1a263e, #1b2442, #1f2145, #241e47);
+  --black: #000;
+  --white: #fff;
+  --light-gold: #ad974f;
+  --dark-gold: #8E793E;
 }
 
 * {
@@ -21,6 +19,7 @@ body, input, textarea, button {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.6;
+  color: var(--black);
 }
 
 ul {
@@ -29,15 +28,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--black);
 }
 
-h1, h2, h3, h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
   line-height: 1.2;
   margin: 10px 0;
-  color: var(--secondary-color);
+  text-transform: uppercase;
 }
 
 p, li {
@@ -67,7 +65,7 @@ img {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  background-color: var(--primary-color);
+  background-color: var(--light-gold);
   color: white;
   border: none;
   border-radius: 3px;
