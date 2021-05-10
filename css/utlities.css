@@ -15,7 +15,7 @@
   scroll-behavior: smooth;
 }
 
-body, input, textarea, button {
+body, input, textarea, button, sup {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.6;
@@ -45,6 +45,8 @@ p, li {
 img {
   width: 100%;
 }
+
+
 
 .container {
   max-width: 1600px;

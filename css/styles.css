@@ -16,3 +16,30 @@
 .hero img {
 	transform: scaleX(-1);
 }
+
+.hero sup {
+	color: white;
+}
+/* about */
+
+.about {
+	background-color: cornflowerblue;
+}
+
+.about img {
+	width: 25%;
+}
+
+
+
+/* proof */
+
+
+.proof-1 {
+	background-color: #496CF8;
+	color: #fff;
+	padding: 4rem 0 0 0;
+
+
+}
+
