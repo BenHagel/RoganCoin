@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 
 :root {
-  --black: #000;
+  --black: #111;
   --white: #fff;
   --light-gold: #ad974f;
   --dark-gold: #8E793E;
+
 }
 
 * {
@@ -15,11 +16,13 @@
   scroll-behavior: smooth;
 }
 
-body, input, textarea, button, sup {
+
+body, input, textarea, button, sup, blockquote {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 1.6;
-  color: var(--black);
+  line-height: 1.8;
+  color: var(--body);
+
 }
 
 ul {
@@ -31,11 +34,16 @@ a {
   color: var(--black);
 }
 
-h1, h2, h3 {
-  font-family: 'Archivo Black', sans-serif;
+h1, h2 {
+  font-weight: 900;
   line-height: 1.2;
   margin: 10px 0;
   text-transform: uppercase;
+  color: var(--black);
+}
+
+h3 {
+  color: var(--black);
 }
 
 p, li {
@@ -57,9 +65,9 @@ img {
 
 .card {
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   margin: 10px;
 }
 
@@ -208,6 +216,7 @@ select,
 option,
 legend,
 fieldset,
+blockquote,
 h1,
 h2,
 h3,
@@ -297,7 +306,7 @@ h4 {
   }
 }
 
-blockquote {
+/* blockquote {
   font-size: 1.25em;
   line-height: 1.25;
 }
@@ -307,7 +316,7 @@ blockquote {
 		font-size: 1.5em;
 		line-height: 1.45833333;
 	}
-}
+} */
 
 
 /* Devices */

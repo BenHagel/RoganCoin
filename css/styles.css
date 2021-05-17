@@ -1,5 +1,16 @@
 /* header */
 
+.header {
+	background: var(--black);
+	color: var(--white);
+	
+}
+
+.header.navbar.flex {
+	flex-direction: row;
+}
+
+
 /* hero */
 
 .hero {
@@ -7,39 +18,135 @@
 	background-size: cover;
 	height: 90vh;
 	color: var(--white);
+	background-image: url('/images/jrCover.png');
+	background-size: 75%;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+
 }
 
 .hero h1 {
 	padding-bottom: .5em;
+	color: var(--white);
+	padding-right: 50%;
+	
 }
 
-.hero img {
-	transform: scaleX(-1);
-}
 
 .hero sup {
 	color: white;
 }
+
 /* about */
 
 .about {
-	background-color: cornflowerblue;
+	height: 90vh;
+	position: relative;
+	background-image: url('/images/jrPoint.png'), linear-gradient(to left, var(--light-gold) 70%, rgba(0,0,0,0) 70%);
+	background-size: 50vw;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 10;
 }
 
-.about img {
-	width: 25%;
+
+.about p {
+	padding: 1em 0 2em 0;
+}
+
+.about .grid {
+	grid-template-columns: 50vw 1fr;
+}
+
+/* .about::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgba(0,0,0,0) 65%, yellow 35%);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	
+
+} */
+
+
+/* monkey */
+
+.monkey {
+	height: 50vh;
+	background-image: url('/images/jrApe.jpg');
+	background-size: contain;
+	/* background-color: rgba(0, 0, 0, .2);
+	background-blend-mode: multiply; */
 }
 
 
 
 /* proof */
 
+.proof {
+	color: var(--black);
+	background: #f7f7f7;
+	position: relative;
+	
+}
 
-.proof-1 {
-	background-color: #496CF8;
-	color: #fff;
-	padding: 4rem 0 0 0;
+.proof img {
+	border-radius: 100%;
+	border: 3px solid var(--light-gold);
+	width: 50%;
+}
 
+.proof figcaption {
+	font-weight: 500;
+	
+}
+
+.proof::before {
+	content: '';
+	position: absolute;
+	height: 300px;
+	bottom: 125px;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(to right top, #ad974f, #a58f4b, #9d8846, #968042, #8e793e);
+	transform: skewY(-5deg);
 
 }
+
+.proof article p::before {
+	content: '"';
+	display: block;
+	text-align: left;
+	color: var(--dark-gold);
+	font-size: 2em;
+	opacity: 45%;
+
+}
+
+.proof .card, blockquote {
+	color: var(--black);
+	z-index: 5;
+}
+
+.proof .grid {
+	align-items: stretch;
+	padding-top: 3em;
+}
+
+
+/* faq */
+
+.faq .grid {
+	column-gap: 8rem;
+	row-gap: 4rem;
+	align-items: stretch;
+	padding-top: 3rem;
+}
+
 
