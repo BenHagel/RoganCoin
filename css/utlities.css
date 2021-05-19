@@ -48,6 +48,7 @@ h3 {
 
 p, li {
   margin: 10px 0;
+  max-width: 65ch;
 }
 
 img {

@@ -7,13 +7,23 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">	
 		<link rel="stylesheet" href="css/utlities.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<title>Rogan Finance</title>
 	</head>
 	<body>
 		<!-- Header -->
 		<header class="header py-1">
-			<div class="container">
+			<div class="container flex">
 				<h4>Logo</h4>
+				<nav class="navbar">
+					<ul class="flex">
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">Our Story</a></li>
+						<li><a href="#tokenomics">Tokenomics</a></li>
+						<li><a href="#proof">Proof</a></li>
+						<li><a href="#faq">FAQ</a></li>
+					</ul>
+				</nav>
 			</div>
 
 		</header>
@@ -29,20 +39,42 @@
 			</section>
 
 			<!-- about -->
-			<section class="about">
-				<div class="container grid py-5">
+			<section class="about" id="about">
+				<div class="container py-5">
 					<div class="about-text">
-						<h2>Our Story</h2>
+						<h2>My Friend Joe</h2>
 						<p>Here’s the deal. I know Joe Rogan. I mean, not really, but he knows my uncle. They went to school together and worked at a landscaping company. My uncle told Joe that I do crypto coins and Joe thinks it’s wicked sick, apparently. In fact, Joe (Joe Rogan, I call him Joe cause we’re friendly haha) was so impressed that he said he would like to endorse this coin on his podcast with over 20 million listeners! Isn’t that wild? He will be doing it soon I think.</p>
 						<a href=""><button class="btn">Buy Now</button></a>
 					</div>
 				</div>
 			</section>
 
+			<!-- tokenomics -->
+
+			<section class="tokenomics" id="tokenomics">
+				<div class="container grid py-5">
+					<div>
+						<h2>Tokenomics</h2>
+						<p>2% of each transaction will go to a Charity of Joe Rogan’s choice. If he doesn’t let me know which charity he chooses, the funds unfortunately can’t be donated. I’m sure he will since he is involved with this project, but there's a chance the charity wallet could grow very large and if Joe is silent he is effectively preventing dogs from having a home or global warming or AIDS or something. Be sure to let him know about this on twitter sometimes he takes his time replying.</p>
+						<ul>
+							<li>- 5% of each transaction will be redistributed amongst holders.</li>
+							<li>- 2% of each transaction will be burned forever.</li>
+							<li>- 2% of each transaction locked into the liquidity pool</li>
+						</ul>
+					</div>
+					<div class="card">
+						<canvas id="myChart" width="400" height="400"></canvas>
+					</div>
+	
+					
+
+				</div>
+			</section>
+
 
 
 			<!-- proof -->
-			<section class="proof text-center py-5">
+			<section class="proof text-center py-5" id="proof">
 				<h2>Proof</h2>
 				<p>From Joe's mouth to your ears</p>
 				<div class="container grid grid-r">
@@ -79,8 +111,10 @@
 
 
 
+
+
 			<!-- faq -->
-			<section class="faq py-5">
+			<section class="faq py-5" id="faq">
 				<div class="container">
 					<h2 class="text-center">FAQ</h2>
 					<div class="grid">
@@ -122,4 +156,40 @@
 		</footer>
 
 	</body>
+
+	<script>
+		let myChart = document.getElementById('myChart').getContext('2d');
+
+		// Chart.defaults.global.defaultFontFamily = 'Roboto';
+		// Chart.defaults.global.defaultFontSize = 18;
+
+		let tockenChart = new Chart(myChart, {
+			type:'pie',
+			data:{
+				labels:['Charity of Joe Rogan’s choice', 'redistributed amongst holders', 'will be burned forever', 'locked into the liquidity pool'],
+				datasets:[{
+					label:'tokenomics',
+					data:[
+						2,
+						5,
+						2,
+						2
+					],
+					backgroundColor:[
+						'#7A6B38',
+						'#ad974f',
+						'#FADA73',
+						'#FAECBE'
+
+					]
+				}],
+
+			},
+			options:{
+			},
+
+		});
+
+	</script>
+	
 </html>
