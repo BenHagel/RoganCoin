@@ -11,6 +11,7 @@
 	margin: 0 .5rem;
 	text-transform: uppercase;
 	transition: .2s ease-in-out;
+	/* font-size: 1rem; */
 }
 
 .header a:hover {
@@ -164,4 +165,52 @@
 	padding-top: 3rem;
 }
 
+/* footer */
 
+
+
+
+/* Devices */
+
+@media(max-width: 768px) {
+	
+	.hero {
+		text-align: center;
+	}
+
+	.hero h1 {
+		padding-right: 0%;
+	}
+
+	.about {
+		background-image: url('/images/jrPoint.png'), linear-gradient(to bottom, var(--light-gold) 0%, rgba(0,0,0,0) 0%);
+	}
+
+	.proof::before {
+		content: '';
+		position: absolute;
+		height: 300px;
+		bottom: 750px;
+		left: 0;
+		right: 0;
+		background-image: linear-gradient(to right top, #ad974f, #a58f4b, #9d8846, #968042, #8e793e);
+		transform: skewY(-5deg);
+	
+	}
+
+
+
+
+
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+ 
+}
+
+/* @media(max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+} */
