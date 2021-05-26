@@ -93,14 +93,16 @@
 
 /* Tockenomics */
 
-
+.tokenomics {
+	background-color: #f7f7f7;
+}
 
 .tokenomics ul {
 	list-style-type: initial;
 }
 
 .tokenomics .grid {
-	gap: 5rem;
+	gap: 10rem;
 }
 
 
@@ -135,7 +137,6 @@
 
 .proof figcaption {
 	font-weight: 500;
-	
 }
 
 .proof::before {
@@ -184,6 +185,7 @@
 		text-align: center;
 		background-attachment: scroll;
 		background-size: 100%;
+		height: 80vh;
 	}
 
 	.hero h1 {
@@ -192,6 +194,10 @@
 
 	.about {
 		background-image: url('/images/jrPoint.png'), linear-gradient(to bottom, var(--light-gold) 0%, rgba(0,0,0,0) 0%);
+	}
+
+	.about .grid {
+		grid-template-columns: 1fr;
 	}
 
 	.proof::before {
@@ -205,10 +211,6 @@
 		transform: skewY(-5deg);
 	
 	}
-
-
-
-
 
 	.grid {
 		grid-template-columns: 1fr;
