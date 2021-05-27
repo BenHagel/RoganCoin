@@ -3,7 +3,6 @@
 .header {
 	background: var(--black);
 	color: var(--white);
-	
 }
 
 .logo {
@@ -33,6 +32,7 @@
 .header ul.flex {
 	flex-direction: row;
 }
+
 
 
 /* hero */
