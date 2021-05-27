@@ -146,13 +146,34 @@
 				</div>
 			</section>
 
-			<!-- monkey -->
-			<section class="monkey">
+			<!-- disclaimer -->
+			<section class="disclaimer py-5">
+				<div class="container grid">
+					<div class="disclaimer-icon card flex">
+						<i class="fas fa-exclamation-triangle fa-10x"></i>
+					</div>
+					<div class="disclaimer-text">
+						<h2>Legal Disclaimer</h2>
+						<p>The information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website's content as such. The Rogan Finance team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions. By purchasing Rogan Finance, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token "as is" and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.</p>
+					</div>
+				</div>
 			</section>
 
 		</main>
 
-		<footer class="footer py-3" id="contact">
+		<footer class="footer py-4" id="contact">
+			<section class="container text-center">
+				<div class="social">
+					<a href=""><i class="fab fa-telegram fa-2x"></i></a>
+					<a href=""><i class="fab fa-reddit fa-2x"></i></a>
+					<a href=""><i class="fab fa-twitter fa-2x"></i></a>
+				
+					
+				</div>
+				<p>Copyright © Rogan Finance 2021</p>
+			
+
+			</section>
 		</footer>
 
 	</body>
@@ -163,7 +184,7 @@
 		// Chart.defaults.global.defaultFontFamily = 'Roboto';
 		// Chart.defaults.global.defaultFontSize = 18;
 
-		let tockenChart = new Chart(myChart, {
+		let tokenChart = new Chart(myChart, {
 			type:'pie',
 			data:{
 				labels:['Charity of Joe Rogan’s choice', 'redistributed amongst holders', 'will be burned forever', 'locked into the liquidity pool'],

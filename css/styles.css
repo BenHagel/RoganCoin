@@ -6,7 +6,7 @@
 	
 }
 
-.header .logo {
+.logo {
 	max-width: 100px;
 }
 
@@ -19,7 +19,7 @@
 	margin: 0 .5rem;
 	text-transform: uppercase;
 	transition: .2s ease-in-out;
-	/* font-size: 1rem; */
+	font-weight: 500;
 }
 
 .header a:hover {
@@ -102,20 +102,7 @@
 }
 
 .tokenomics .grid {
-	gap: 10rem;
-}
-
-
-
-
-/* monkey */
-
-.monkey {
-	height: 50vh;
-	background-image: url('/images/jrApe.jpg');
-	background-size: contain;
-	/* background-color: rgba(0, 0, 0, .2);
-	background-blend-mode: multiply; */
+	gap: 5rem;
 }
 
 
@@ -172,7 +159,45 @@
 	padding-top: 3rem;
 }
 
+/* disclaimer */
+
+.disclaimer {
+	background-color: #f7f7f7;
+}
+
+.disclaimer .card{
+	background-color: #FFF3CD;
+	box-shadow: none;
+	border: 2px solid #FFECB4;
+}
+
+.disclaimer .fa-exclamation-triangle {
+	color: #664D03;
+}
+
 /* footer */
+
+.footer {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.footer p {
+	max-width: none;
+	opacity: .75;
+}
+
+.footer a {
+	color: var(--white);
+	padding: 0 .5rem;
+	opacity: .75;
+	transition: .23s ease-in-out;
+}
+
+.footer a:hover {
+	opacity: 1;
+}
+
 
 
 

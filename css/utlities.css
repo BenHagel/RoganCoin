@@ -6,6 +6,7 @@
   --white: #fff;
   --light-gold: #ad974f;
   --dark-gold: #8E793E;
+  --body: #333;
 
 }
 
@@ -22,7 +23,6 @@ body, input, textarea, button, sup, blockquote {
   font-size: 18px;
   line-height: 1.8;
   color: var(--body);
-
 }
 
 ul {
@@ -104,7 +104,7 @@ img {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
   height: 100%;
