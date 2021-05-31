@@ -5,13 +5,20 @@
 	color: var(--white);
 }
 
-.logo {
-	max-width: 100px;
-}
-
 .header .container {
 	animation: fade-in 2.5s;
 }
+
+.header .logo {
+	max-width: 200px;
+	margin-bottom: -0.5em;
+	transition: .25s ease-in-out;
+}
+
+.header .logo:hover {
+	opacity: .6;
+}
+
 
 .header a {
 	color: var(--white);
@@ -27,11 +34,13 @@
 
 .header .flex {
 	justify-content: space-between;
+	align-items: center;
 }
 
 .header ul.flex {
 	flex-direction: row;
 }
+
 
 
 

@@ -1,141 +1,48 @@
-.menu-wrap {
-    position: relative;
-    top: 0;
-    left: 1rem;
-    z-index: 1;
-  }
-  
-  .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    left: 90%;
-    z-index: 2;
+.ham {
+    position: fixed;
+    /* keep the hamburger button above everything */
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: black solid 1px;
+    background: white;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
   }
   
-  .menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    left: 90%;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .xIcon {
+    display: none;
   }
   
-  /* Hamburger Line */
-  .menu-wrap .hamburger > div {
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-  }
-  
-  /* Hamburger Lines - Top & Bottom */
-  .menu-wrap .hamburger > div::before,
-  .menu-wrap .hamburger > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-  }
-  
-  /* Moves Line Down */
-  .menu-wrap .hamburger > div::after {
-    top: 10px;
-  }
-  
-  /* Toggler Animation */
-  .menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
-  
-  /* Turns Lines Into X */
-  .menu-wrap .toggler:checked + .hamburger > div:before,
-  .menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  
-  /* Rotate On Hover When Checked */
-  .menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-  }
-  
-  /* Show Menu */
-  .menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-  }
-  
-  .menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: var(--menu-speed);
-  }
-  
-  .menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
-  }
-  
-  .menu-wrap .menu {
+  .menu {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menu-wrap .menu > div {
-    background: rgba(0, 0, 0, .9);
-    border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-  }
-  
-  .menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-  
-  .menu-wrap .menu > div > div > ul > li {
+    height: 100vh;
+    background: black;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
     list-style: none;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
+    padding-top: 4rem;
   }
   
-  .menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
+  .showMenu {
+    transform: translateY(0);
+  }
+  
+  li {
+    padding: 1rem 0;
+  }
+  
+  .menuLink {
+    display: inline;
+    font-size: 2rem;
+    color: white;
     text-decoration: none;
-    transition: color 0.4s ease;
   }
   

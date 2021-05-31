@@ -13,32 +13,34 @@
 	</head>
 	<body>
 		<!-- Header -->
-			<header class="header py-1">
-				<div class="menu-wrap">
-					<input type="checkbox" class="toggler">
-					<div class="hamburger"><div></div></div>
-					<div class="menu">
-					  <div>
-						<div class="menu-content">
-						  <ul>
-							<h1>Rogan Finance</h1>
-							<li><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#tokenomics">Tokenomics</a></li>
-							<li><a href="#proof">Proof</a></li>
-							<li><a href="#faw">FAQ</a></li>
-						  </ul>
-						  <div class="social">
-							<a href=""><i class="fab fa-telegram fa-2x"></i></a>
-							<a href=""><i class="fab fa-reddit fa-2x"></i></a>
-							<a href=""><i class="fab fa-twitter fa-2x"></i></a>
-						</div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-			</header>
+		<header class="header py-1">
+			<!-- <div class="container flex">
+				<a href="#"><img class="logo" src="images/rfWordWhite.svg" alt=""></a>
+				<nav class="navbar">
+					<ul class="flex">
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">Our Story</a></li>
+						<li><a href="#tokenomics">Tokenomics</a></li>
+						<li><a href="#proof">Proof</a></li>
+						<li><a href="#faq">FAQ</a></li>
+					</ul>
+				</nav>
 
+				
+			</div> -->
+			<div class="container">
+				<button class="ham">
+					<i class="menuIcon fas fa-bars"></i>
+					<i class="xIcon fas fa-times"></i>
+				</button>
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">Our Story</a></li>
+					<li><a href="#tokenomics">Tokenomics</a></li>
+					<li><a href="#proof">Proof</a></li>
+					<li><a href="#faq">FAQ</a></li>
+				  </ul>
+			</div>
 		</header>
 
 		<main>
@@ -186,6 +188,7 @@
 	</body>
 
 	<script>
+		//chart
 		let myChart = document.getElementById('myChart').getContext('2d');
 
 		// Chart.defaults.global.defaultFontFamily = 'Roboto';
@@ -217,6 +220,35 @@
 			},
 
 		});
+
+		//hamburger menu
+
+		var menu = document.querySelector(".menu")
+var ham = document.querySelector(".ham")
+var xIcon = document.querySelector(".xIcon")
+var menuIcon = document.querySelector(".menuIcon")
+
+ham.addEventListener("click", toggleMenu)
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+var menuLinks = document.querySelectorAll(".menuLink")
+
+menuLinks.forEach(
+  function (menuLink) {
+    menuLink.addEventListener("click", toggleMenu)
+  }
+)
 
 	</script>
 	
