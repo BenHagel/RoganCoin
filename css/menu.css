@@ -29,6 +29,7 @@
     transition: transform 0.2s;
     list-style: none;
     padding-top: 4rem;
+    z-index: 92;
   }
   
   .showMenu {
