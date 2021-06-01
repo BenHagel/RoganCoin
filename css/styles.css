@@ -111,7 +111,9 @@
 }
 
 .tokenomics ul {
-	list-style-type: initial;
+	list-style-type: disc;
+	list-style-position: inside;
+	
 }
 
 .tokenomics .grid {
@@ -220,10 +222,13 @@
 @media(max-width: 768px) {
 	
 	.hero {
-		text-align: center;
 		background-attachment: scroll;
 		background-size: 100%;
 		height: 80vh;
+	}
+
+	.hero .container {
+		padding-bottom: 12em;
 	}
 
 	.hero h1 {
@@ -253,6 +258,10 @@
 	.grid {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
+	}
+
+	.ham {
+		right: 1rem;
 	}
  
 }

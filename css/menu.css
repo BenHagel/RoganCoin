@@ -3,7 +3,7 @@
     /* keep the hamburger button above everything */
     z-index: 100;
     top: 1rem;
-    right: 1rem;
+    right: 5rem;
     width: 3rem;
     height: 3rem;
     border: black solid 1px;
