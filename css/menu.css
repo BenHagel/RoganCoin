@@ -54,6 +54,10 @@
     width: 100%;
     padding: 3rem;
   }
+
+  .menu a {
+    width: 100%;
+  }
   
   @media (min-width: 43.75em) {
     .menu li {
