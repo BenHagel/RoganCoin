@@ -213,6 +213,10 @@
 	opacity: 1;
 }
 
+.footer .logo {
+	max-width: 200px;
+	margin-bottom: -0.5em;
+}
 
 
 
@@ -260,9 +264,7 @@
 		grid-template-rows: 1fr;
 	}
 
-	.ham {
-		right: 1rem;
-	}
+
  
 }
 
