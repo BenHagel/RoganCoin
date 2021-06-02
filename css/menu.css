@@ -48,6 +48,7 @@
     width: 100%;
     font-size: 1.375em;
     line-height: 1.13636364;
+    max-width: none;
   }
 
   .menu ul{
