@@ -13,6 +13,8 @@
 	max-width: 200px;
 	margin-bottom: -0.5em;
 	transition: .25s ease-in-out;
+	height: auto;
+	width: 200px;
 }
 
 .header .logo:hover {
