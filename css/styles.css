@@ -78,6 +78,10 @@
 	
 }
 
+.hero p {
+	max-width: none;
+}
+
 
 .hero sup {
 	color: white;
