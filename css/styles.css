@@ -259,7 +259,7 @@
 
 .footer a {
 	color: var(--white);
-	padding: 0 .5rem;
+	padding: .5rem .5rem;
 	opacity: .75;
 	transition: .23s ease-in-out;
 }
@@ -271,6 +271,11 @@
 .footer .logo {
 	max-width: 200px;
 	margin-bottom: -0.5em;
+}
+
+.footer .link {
+	display: block;
+	text-decoration: underline;
 }
 
 
