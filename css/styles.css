@@ -197,6 +197,50 @@
 	color: #664D03;
 }
 
+
+/* style-guide */
+
+.guide-intro p,
+.guide-colors p {
+	margin: 1.5rem auto;
+}
+
+.guide-colors {
+	background: #f7f7f7;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto;
+
+}
+
+.circle-1 {
+	background: var(--black);
+}
+.circle-2 {
+	background: var(--white);
+	border: 1px solid var(--black);
+}
+.circle-3 {
+	background: var(--light-gold);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 
 .footer {

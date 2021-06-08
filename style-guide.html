@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/rfLogo.png">
+    <link rel="shortcut icon" type="image/jpg" href="/images/rfLogo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">	
+    <link rel="stylesheet" href="css/utlities.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Style Guide</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header py-1">
+        <div class="container flex">
+            <a href="#"><img class="logo" src="images/rfWordWhite.svg" alt=""></a>
+        </div>
+        
+        <div class="container" id="specialHamboorgerRoganFinanceDiv">
+            <button class="ham">
+                <i class="menuIcon fas fa-bars"></i>
+                <i class="xIcon fas fa-times"></i>
+            </button>
+            <div class="menu text-center">
+                <a href="#"><img class="logo" src="images/rfWordWhite.svg" alt=""></a>
+                <ul>
+                    <li><a onclick="closeOutSpecialJoeRoganHamburgerMenu()" href="#">Home</a></li>
+                    <li><a onclick="closeOutSpecialJoeRoganHamburgerMenu()" href="index.html/#about">Our Story</a></li>
+                    <li><a onclick="closeOutSpecialJoeRoganHamburgerMenu()" href="index.html/#tokenomics">Tokenomics</a></li>
+                    <li><a onclick="closeOutSpecialJoeRoganHamburgerMenu()" href="index.html/#proof">Proof</a></li>
+                    <li><a onclick="closeOutSpecialJoeRoganHamburgerMenu()" href="index.html/#faq">FAQ</a></li>
+                  </ul>
+                  <a target="_blank" href="https://twitter.com/FinanceRogan?fbclid=IwAR0h-wevICziGPU4KFt9VlgRFuBoC7HdMC9T-KR4HvCjj4YjO8zfsnS87DY"><i class="fab fa-twitter fa-lg"></i></a>
+                  <a target="_blank" href="https://t.me/joinchat/4-bq9gnZoecyNTBh?fbclid=IwAR3XgiTsbju99wCOglZUjfQzDANOIDo9BfNTO7cne4xNqKUrJTA57D4Gxjs"><i class="fab fa-telegram-plane fa-lg"></i></a>
+                          
+
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="guide-intro py-5">
+            <div class="container text-center">
+                <h1>Rogan Finance Style Guide</h1>
+                <p>So you took a graphic design course in highschool and are ready to start making memes for Rogan Finance? Well, you've come to the right place. We here at Rogan Finance believe in community and have created a boilerplate of materials for you to help spread the word about the upcoming endorsement by my uncle's friend Joe Rogan on his podcast.</p>   
+                <a href="RoganFinanceMemePack/rfMemeFolder.zip" download="roganFinanceMemePack"><button class="btn"><i class="fa fa-download"></i> Download Meme Pack</button></a>
+            </div>
+        </section>
+        <section class="guide-colors py-5">
+            <div class="container text-center">
+                <h2>Colors</h2>
+                <p>This is the exact color scheme of the landscaping company that my uncle and Joe Rogan used to work at in the 80s, so please stay on brand.</p>
+                <div class="grid grid-3">
+                    <article class="card">
+                        <div class="circle circle-1"></div>
+                        <p>#111</p>
+                        <p>rgba(17, 17, 17, 1)</p>
+                    </article>
+                    <article class="card">
+                        <div class="circle circle-2"></div>
+                        <p>#fff</p>
+                        <p>rgba(255, 255, 255, 1)</p>
+                    </article>
+                    <article class="card">
+                        <div class="circle circle-3"></div>
+                        <p>#ad974f</p>
+                        <p>rgba(173, 151, 79, 1)</p>
+                    </article>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer py-4" id="contact">
+        <section class="container text-center">
+            <a target="_blank" href="https://twitter.com/FinanceRogan?fbclid=IwAR0h-wevICziGPU4KFt9VlgRFuBoC7HdMC9T-KR4HvCjj4YjO8zfsnS87DY"><i class="fab fa-twitter fa-lg"></i></a>
+            <a target="_blank" href="https://t.me/joinchat/4-bq9gnZoecyNTBh?fbclid=IwAR3XgiTsbju99wCOglZUjfQzDANOIDo9BfNTO7cne4xNqKUrJTA57D4Gxjs"><i class="fab fa-telegram-plane fa-lg"></i></a>
+            <p>Copyright © Rogan Finance 2021</p>
+            <a href="#"><img class="logo" src="images/rfWordWhite.svg" alt=""></a>
+            
+        </section>
+    </footer>
+
+    <script>
+        //hamburger menu
+
+		var menu = document.querySelector(".menu")
+		var ham = document.querySelector(".ham")
+		var xIcon = document.querySelector(".xIcon")
+		var menuIcon = document.querySelector(".menuIcon")
+
+		ham.addEventListener("click", toggleMenu)
+
+		function toggleMenu() {
+		if (menu.classList.contains("showMenu")) {
+			menu.classList.remove("showMenu");
+			xIcon.style.display = "none";
+			menuIcon.style.display = "block";
+		} else {
+			menu.classList.add("showMenu");
+			xIcon.style.display = "block";
+			menuIcon.style.display = "none";
+		}
+		}
+
+		var menuLinks = document.querySelectorAll(".menuLink")
+
+		menuLinks.forEach(
+		function (menuLink) {
+			menuLink.addEventListener("click", toggleMenu)
+		}
+		)
+
+		function closeOutSpecialJoeRoganHamburgerMenu(){
+			menu.classList.remove("showMenu");
+			xIcon.style.display = "none";
+			menuIcon.style.display = "block";
+		}
+    </script>
+
+    
+</body>
+</html>
