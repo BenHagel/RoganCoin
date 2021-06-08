@@ -200,6 +200,10 @@
 
 /* style-guide */
 
+.guide-intro .container {
+	animation: fade-in 2.5s;
+}
+
 .guide-intro p,
 .guide-colors p {
 	margin: 1.5rem auto;
