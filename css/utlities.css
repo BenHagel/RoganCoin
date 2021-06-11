@@ -99,6 +99,17 @@ img {
   border: 1px solid #fff;
 }
 
+.link {
+  color: var(--light-gold);
+  text-decoration: underline;
+  transition: .2s ease-in-out;
+}
+
+.link:hover {
+  opacity: 75%;
+}
+
+
 /* Layout */
 
 .flex {
