@@ -152,7 +152,7 @@
 	content: '';
 	position: absolute;
 	height: 300px;
-	bottom: 125px;
+	bottom: 225px;
 	left: 0;
 	right: 0;
 	background-image: linear-gradient(to right top, #ad974f, #a58f4b, #9d8846, #968042, #8e793e);
@@ -180,6 +180,53 @@
 	align-items: stretch;
 	padding-top: 3rem;
 }
+
+/* team */
+
+.team {
+	background-color: #f7f7f7
+
+}
+
+
+.team .card img {
+	max-width: 200px;
+	border-radius: 100%;
+}
+
+.team h2 {
+	padding-bottom: 2em;
+}
+
+
+.team .card h4 {
+	text-transform: uppercase;
+	margin-top: 1em;
+}
+
+.team .card a {
+	color: var(--dark-gold);
+	transition: .25s ease-in-out;
+}
+
+.team i {
+	padding-top: .5em;
+}
+
+.team .card a:hover {
+	opacity: 75%;
+}
+
+.team .grid-r {
+	align-items: stretch;
+	gap: 3rem;
+}
+
+
+
+
+
+
 
 /* disclaimer */
 
