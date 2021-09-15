@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
   --black: #111;
   --white: #fff;
   --light-gold: #ad974f;
-  --dark-gold: #8E793E;
+  --dark-gold: #8e793e;
   --body: #333;
-
-
 }
 
 * {
@@ -18,8 +15,12 @@
   scroll-behavior: smooth;
 }
 
-
-body, input, textarea, button, sup, blockquote {
+body,
+input,
+textarea,
+button,
+sup,
+blockquote {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.8;
@@ -35,20 +36,21 @@ a {
   color: var(--black);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 900;
   line-height: 1.2;
   margin: 10px 0;
   text-transform: uppercase;
   color: var(--black);
-  
 }
 
 h3 {
   color: var(--black);
 }
 
-p, li {
+p,
+li {
   margin: 10px 0;
   max-width: 65ch;
 }
@@ -56,8 +58,6 @@ p, li {
 img {
   width: 100%;
 }
-
-
 
 .container {
   max-width: 1600px;
@@ -86,12 +86,11 @@ img {
   margin-top: 1em;
   font-weight: 500;
   transition: 0.25s ease-in-out;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .btn:hover {
   opacity: 75%;
-  
 }
 
 .btn-2 {
@@ -102,13 +101,12 @@ img {
 .link {
   color: var(--light-gold);
   text-decoration: underline;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .link:hover {
   opacity: 75%;
 }
-
 
 /* Layout */
 
@@ -135,7 +133,6 @@ img {
 .grid-r {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
 
 /* Margin */
 
@@ -253,8 +250,8 @@ h6 {
 
 @media (min-width: 43.75em) {
   #page {
-	font-size: 1em;
-	line-height: 1.375;
+    font-size: 1em;
+    line-height: 1.375;
   }
 }
 
@@ -265,15 +262,15 @@ h1 {
 
 @media (min-width: 43.75em) {
   h1 {
-	font-size: 2.5em;
-	line-height: 1.125;
+    font-size: 2.5em;
+    line-height: 1.125;
   }
 }
 
 @media (min-width: 56.25em) {
   h1 {
-	font-size: 3em;
-	line-height: 1.05;
+    font-size: 3em;
+    line-height: 1.05;
   }
 }
 
@@ -284,15 +281,15 @@ h2 {
 
 @media (min-width: 43.75em) {
   h2 {
-	font-size: 2em;
-	line-height: 1.25;
+    font-size: 2em;
+    line-height: 1.25;
   }
 }
 
 @media (min-width: 56.25em) {
   h2 {
-	font-size: 2.25em;
-	line-height: 1.25;
+    font-size: 2.25em;
+    line-height: 1.25;
   }
 }
 
@@ -303,15 +300,15 @@ h3 {
 
 @media (min-width: 43.75em) {
   h3 {
-	font-size: 1.5em;
-	line-height: 1.25;
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 }
 
 @media (min-width: 56.25em) {
   h3 {
-	font-size: 1.75em;
-	line-height: 1.25;
+    font-size: 1.75em;
+    line-height: 1.25;
   }
 }
 
@@ -322,7 +319,7 @@ h4 {
 
 @media (min-width: 43.75em) {
   h4 {
-	line-height: 1.22222222;
+    line-height: 1.22222222;
   }
 }
 
@@ -337,5 +334,3 @@ h4 {
 		line-height: 1.45833333;
 	}
 } */
-
-

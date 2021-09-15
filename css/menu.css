@@ -1,83 +1,81 @@
 .ham {
-    position: fixed;
-    /* keep the hamburger button above everything */
-    z-index: 100;
-    top: 1rem;
-    right: 5rem;
-    width: 3rem;
-    height: 3rem;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
-  }
+  position: fixed;
+  /* keep the hamburger button above everything */
+  z-index: 100;
+  top: 1rem;
+  right: 5rem;
+  width: 3rem;
+  height: 3rem;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
 
-  @media(max-width: 768px) {
-    .ham {
-      right: 1rem;
-    }
+@media (max-width: 768px) {
+  .ham {
+    right: 1rem;
+  }
+}
 
-  }
-  
-  .xIcon {
-    display: none;
-  }
-  
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    color: white;
-    transform: translateY(-100%);
-    transition: transform 0.4s ease-in-out;
-    list-style: none;
-    padding-top: 4rem;
-    z-index: 92;
-  }
-  
-  .showMenu {
-    transform: translateY(0);
-  }
-  
+.xIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+  list-style: none;
+  padding-top: 4rem;
+  z-index: 92;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.menu li {
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 1.375em;
+  line-height: 1.13636364;
+  max-width: none;
+}
+
+.menu ul {
+  width: 100%;
+  padding: 3rem;
+}
+
+.menu a {
+  width: 100%;
+}
+
+@media (min-width: 43.75em) {
   .menu li {
-    padding: 1rem 0;
-    width: 100%;
-    font-size: 1.375em;
-    line-height: 1.13636364;
-    max-width: none;
-  }
-
-  .menu ul{
-    width: 100%;
-    padding: 3rem;
-  }
-
-  .menu a {
-    width: 100%;
-  }
-  
-  @media (min-width: 43.75em) {
-    .menu li {
     font-size: 1.5em;
     line-height: 1.25;
-    }
   }
-  
-  @media (min-width: 56.25em) {
-    .menu li {
-    font-size: 1.75em;
+}
+
+@media (min-width: 56.25em) {
+  .menu li {
+    font-size: 1.4em;
     line-height: 1.25;
-    }
   }
-  
-  .menuLink {
-    display: inline;
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-  }
-  
+}
+
+.menuLink {
+  display: inline;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
